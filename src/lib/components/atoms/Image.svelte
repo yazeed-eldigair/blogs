@@ -3,7 +3,9 @@
 
 	export let src: string;
 	export let alt: string;
-	export let fullBleed: boolean | undefined = undefined;
+	export let tilt = false;
+	export let fullBleed = false;
+	export let round = false;
 
 	export let formats: string[] = ['avif', 'webp', 'png'];
 	export let widths: string[] | undefined = undefined;
@@ -37,12 +39,25 @@
 	}
 </script>
 
-<img srcset={buildSrcset()} {src} {alt} loading="lazy" decoding="async" class:full-bleed={fullBleed} />
+<img
+	srcset={buildSrcset()}
+	{src}
+	{alt}
+	loading="lazy"
+	decoding="async"
+	class:full-bleed={fullBleed}
+	class:round
+	class:tilt
+/>
 
 <style lang="scss">
 	img {
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
+	}
+
+	.round {
+		border-radius: 20%;
 	}
 </style>

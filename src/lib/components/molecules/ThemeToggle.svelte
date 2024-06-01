@@ -2,17 +2,19 @@
 	import { theme } from '$lib/stores/theme';
 
 	function toggleTheme() {
-		if ($theme === 'auto') {
-			theme.set('light');
-		} else if ($theme === 'light') {
+		if ($theme === 'light') {
 			theme.set('dark');
 		} else {
-			theme.set('auto');
+			theme.set('light');
 		}
 	}
 </script>
 
 <noscript>
+	<!-- Hide the theme toggle if JavaScript is disabled -->
+	<!-- Hide the theme toggle if JavaScript is disabled -->
+	<!-- Hide the theme toggle if JavaScript is disabled -->
+	<!-- Hide the theme toggle if JavaScript is disabled -->
 	<!-- Hide the theme toggle if JavaScript is disabled -->
 	<style>
 		.theme-toggle {

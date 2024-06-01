@@ -1,29 +1,22 @@
 <script>
-	import SparklingHighlight from '$lib/components/molecules/SparklingHighlight.svelte';
 	import Socials from '$lib/components/molecules/Socials.svelte';
 	import Image from '../atoms/Image.svelte';
 </script>
 
 <section id="about">
 	<div class="info">
-		<h2>
-			This is a catchy headline that
-			<SparklingHighlight color="secondary">sparkles!</SparklingHighlight>
-		</h2>
+		<h2>A software engineer? Cloud engineer? Developer? None of the above?</h2>
 		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum velit voluptatibus commodi
-			autem provident quam labore, libero beatae praesentium voluptate?
+			Built this to share my questionable opinions on software, but also just talk about random
+			stuff outside of that.
 		</p>
-		<div class="socials">
+		<!-- <div class="socials">
 			<span>Socials:</span>
 			<Socials />
-		</div>
+		</div> -->
 	</div>
-	<div class="image">
-		<Image
-			src="/images/sample-image.png"
-			alt="Sample for the static template"
-		/>
+	<div class="tilt image">
+		<Image src="/images/yazeed.jpg" alt="Yazeed" round />
 	</div>
 </section>
 

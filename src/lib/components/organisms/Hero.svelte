@@ -1,26 +1,23 @@
 <script>
-	import FeaturesIcon from '$lib/icons/features.svelte';
-	import GitHubIcon from '$lib/icons/socials/github.svelte';
 	import Button from '$lib/components/atoms/Button.svelte';
-	import Sparkles from '../atoms/Sparkles.svelte';
+	import Blog from '$lib/icons/blog.svelte';
+	import Projects from '$lib/icons/projects.svelte';
 </script>
 
 <section id="hero">
-	<h1 class="hello">This is a SvelteKit Static Blog Template!</h1>
+	<h1 class="hello">I'm Yazeed.</h1>
 	<p class="intro">
-		<span class="left">It supports Markdown,</span>
-		<span class="right">and is really fast.</span>
+		<span class="left">This is my attempt at</span>
+		<span class="right">my own blog website</span>
 	</p>
 	<div class="ctas">
-		<Sparkles>
-			<Button href="https://github.com/matfantinel/sveltekit-static-blog-template">
-				<GitHubIcon slot="icon" />
-				Source Code
-			</Button>
-		</Sparkles>
-		<Button color="primary" href="https://histoire-sveltekit-static-blog-template.vercel.app/">
-			<FeaturesIcon slot="icon" />
-			Components
+		<Button href="/blog">
+			<Blog slot="icon" />
+			Blogs
+		</Button>
+		<Button color="primary" href="#projects">
+			<Projects slot="icon" />
+			Projects
 		</Button>
 	</div>
 </section>

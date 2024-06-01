@@ -13,13 +13,20 @@ export type TagType = {
   color?: 'primary' | 'secondary'
 }
 
-export type SocialLink = {
-  
+export type ExternalLink = {
+  label: string,
+  href: string
 }
 
-export type Feature = {
+export type SocialLink = {
+
+}
+
+export type Project = {
   name: string,
   description: string,
+  externalLink?: ExternalLink,
+  githubLink: string,
   image: string,
   tags: TagType[]
 }

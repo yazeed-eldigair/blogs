@@ -1,5 +1,10 @@
 {
-	"cssVariables.lookupFiles": ["**/*.css", "**/*.scss", "**/*.sass", "**/*.less"],
+	"cssVariables.lookupFiles": [
+		"**/*.css",
+		"**/*.scss",
+		"**/*.sass",
+		"**/*.less"
+	],
 	"editor.formatOnSave": true,
 	"prettier.singleQuote": true,
 	"frontMatter.preview.host": "http://localhost:5173/",
@@ -7,5 +12,7 @@
 	"frontMatter.content.autoUpdateDate": false,
 	"frontMatter.content.fmHighlight": true,
 	"frontMatter.content.publicFolder": "static",
-	"files.autoSave": "afterDelay"
+	"files.autoSave": "afterDelay",
+	"editor.stickyScroll.scrollWithEditor": false,
+	"workbench.tree.enableStickyScroll": false,
 }

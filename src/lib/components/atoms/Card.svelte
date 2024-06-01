@@ -14,11 +14,13 @@
 		target,
 		rel
 	};
+
+	const cardId = Math.ceil(Math.random() * 1000);
 </script>
 
 <svelte:element
 	this={tag}
-	class="card {additionalClass}"
+	class="card tilt {additionalClass}"
 	{...linkProps}
 	data-sveltekit-preload-data
 	{...$$restProps}
@@ -32,6 +34,11 @@
 		<div class="content">
 			<slot name="content" />
 		</div>
+		{#if $$slots.external}
+			<div class="external">
+				<slot name="external" />
+			</div>
+		{/if}
 		{#if $$slots.footer}
 			<div class="footer">
 				<slot name="footer" />
@@ -41,7 +48,10 @@
 </svelte:element>
 
 <style lang="scss">
+	// $random_number: random(1000); // Generates a number between 1 and 1000
+
 	.card {
+		// view-transition-name: #{$random_number}; // Use the variable for styling;
 		background: var(--color--card-background);
 		box-shadow: var(--card-shadow);
 		color: var(--color--text);

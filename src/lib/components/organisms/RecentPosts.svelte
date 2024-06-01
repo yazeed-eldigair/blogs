@@ -3,31 +3,33 @@
 	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
 	import type { BlogPost } from '$lib/utils/types';
 	import Button from '$lib/components/atoms/Button.svelte';
+	import RobotWriting from '$lib/components/molecules/RobotWriting.svelte';
 
 	export let posts: BlogPost[];
+
+	posts = [];
 </script>
 
-<ContentSection
-	id="recent-posts"
-	title="Blog posts"
-	description="This section shows the 4 most recent blog posts. Check them out for tips on how to get started!"
-	align="left"
->
-	<div slot="button">
+<ContentSection id="recent-posts" title="My recent blog posts" align="top">
+	<!-- <div slot="button">
 		<Button href="/blog">View More</Button>
-	</div>
-	<div class="grid">
-		{#each posts as post}
-			<BlogPostCard
-				slug={post.slug}
-				title={post.title}
-				excerpt={post.excerpt}
-				tags={post.tags}
-				readingTime={post.readingTime}
-				showImage={false}
-			/>
-		{/each}
-	</div>
+	</div> -->
+	{#if posts.length}
+		<div class="grid">
+			{#each posts as post}
+				<BlogPostCard
+					slug={post.slug}
+					title={post.title}
+					excerpt={post.excerpt}
+					tags={post.tags}
+					readingTime={post.readingTime}
+					showImage={false}
+				/>
+			{/each}
+		</div>
+	{:else}
+		<RobotWriting />
+	{/if}
 </ContentSection>
 
 <style lang="scss">

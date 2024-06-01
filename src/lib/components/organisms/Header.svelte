@@ -1,7 +1,8 @@
 <script lang="ts">
 	import Logo from '$lib/components/atoms/Logo.svelte';
 	import ThemeToggle from '$lib/components/molecules/ThemeToggle.svelte';
-	import RssLink from '$lib/components/atoms/RssLink.svelte';
+	// import RssLink from '$lib/components/atoms/RssLink.svelte';
+	import Socials from '../molecules/Socials.svelte';
 
 	export let showBackground = false;
 </script>
@@ -12,8 +13,9 @@
 			<Logo />
 		</a>
 		<div class="links">
-			<a href="/blog">Blog</a>
-			<RssLink />
+			<Socials />
+			<a href="/blog">Blogs</a>
+			<!-- <RssLink /> -->
 			<ThemeToggle />
 		</div>
 	</nav>
@@ -23,6 +25,7 @@
 	@import '$lib/scss/breakpoints.scss';
 
 	header {
+		view-transition-name: header;
 		position: relative;
 		padding: 30px 0;
 

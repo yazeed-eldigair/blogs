@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BlogPostCard from '$lib/components/molecules/BlogPostCard.svelte';
+	import RobotWriting from '$lib/components/molecules/RobotWriting.svelte';
 	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
 	import type { BlogPost } from '$lib/utils/types';
 
@@ -8,21 +9,27 @@
 	};
 
 	let { posts } = data;
+
+	posts = [];
 </script>
 
 <div class="container">
 	<ContentSection title="All Blog Posts">
 		<div class="grid">
-			{#each posts as post}
-				<BlogPostCard
-					title={post.title}
-					coverImage={post.coverImage}
-					excerpt={post.excerpt}
-					readingTime={post.readingTime}
-					slug={post.slug}
-					tags={post.tags}
-				/>
-			{/each}
+			{#if posts.length}
+				{#each posts as post}
+					<BlogPostCard
+						title={post.title}
+						coverImage={post.coverImage}
+						excerpt={post.excerpt}
+						readingTime={post.readingTime}
+						slug={post.slug}
+						tags={post.tags}
+					/>
+				{/each}
+			{:else}
+				<RobotWriting backButton={true} />
+			{/if}
 		</div>
 	</ContentSection>
 </div>
