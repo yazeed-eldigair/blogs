@@ -7,13 +7,13 @@
 <section id="hero">
 	<h1 class="hello">I'm Yazeed.</h1>
 	<p class="intro">
-		<span class="left">This is my attempt at</span>
-		<span class="right">my own blog website</span>
+		<span class="left">I think <span class="highlight">software</span> is cool</span>
+		<span class="right">...most of the time</span>
 	</p>
 	<div class="ctas">
 		<Button href="/blog">
 			<Blog slot="icon" />
-			Blogs
+			Blog
 		</Button>
 		<Button color="primary" href="#projects">
 			<Projects slot="icon" />
@@ -49,6 +49,10 @@
 			display: flex;
 			flex-direction: column;
 
+			.highlight {
+				color: var(--color--secondary);
+				font-weight: 600;
+			}
 			.left {
 				text-align: left;
 			}
@@ -56,9 +60,6 @@
 				text-align: right;
 			}
 
-			@include for-phone-only {
-				display: none;
-			}
 		}
 
 		.ctas {

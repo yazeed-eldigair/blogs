@@ -3,7 +3,7 @@
 // Via <svelte:head>
 
 // TODO: change the base URL
-export const siteBaseUrl = 'https://sveltekit-static-blog-template.vercel.app/';
+export const siteBaseUrl = 'https://yazeld.com';
 
 export const keywords = [
 	'Yazeed',
@@ -12,7 +12,8 @@ export const keywords = [
 	'Blog',
 	'Software',
 	'Engineer',
-	'Cloud'
+	'Cloud',
+	'GCP'
 ];
 
 export const description = "A personal portfolio/blog website. Absolutely nothing to see here.";

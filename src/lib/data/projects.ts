@@ -18,7 +18,7 @@ export default [
   {
     name: 'AI Robot Teacher Assistant',
     // description: 'An AI and computer vision based teacher assitant robot that proctors exams autnomously and detects cheating, contactlessly scans exam paper submissions, interacts with humans with a voice and provides personalised academic content.',
-    description: 'A robot that does cool stuff.',
+    description: 'A robot that does a bunch of stuff.',
     image: 'images/projects/reacher.png',
     externalLink: { label: 'View publication', href: 'https://www.mdpi.com/2076-3417/11/21/10449' },
     tags: [{ label: 'Machine learning' }, { label: 'Computer vision' }, { label: 'MDPI', color: 'secondary' }]

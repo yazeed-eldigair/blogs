@@ -1,6 +1,0 @@
-1. Make header sticky
-2. Change main domain
-3. Change site-preview.png
-4. Add page/view transitions
-5. Add vanilla tilt
-https://cssnippets.shefali.dev/

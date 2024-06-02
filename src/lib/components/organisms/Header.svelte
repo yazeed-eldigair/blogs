@@ -14,7 +14,7 @@
 		</a>
 		<div class="links">
 			<Socials />
-			<a href="/blog">Blogs</a>
+			<a href="/blog">Blog</a>
 			<!-- <RssLink /> -->
 			<ThemeToggle />
 		</div>

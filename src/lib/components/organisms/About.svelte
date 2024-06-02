@@ -5,10 +5,10 @@
 
 <section id="about">
 	<div class="info">
-		<h2>A software engineer? Cloud engineer? Developer? None of the above?</h2>
+		<h2>A software engineer? Cloud architect? Just a developer?</h2>
 		<p>
-			Built this to share my questionable opinions on software, but also just talk about random
-			stuff outside of that.
+			Titles are overrated anyway. Welcome, I'll be sharing questionable opinions on software while
+			telling you why you are using the wrong IDE. But also just talk about random stuff.
 		</p>
 		<!-- <div class="socials">
 			<span>Socials:</span>

@@ -22,20 +22,20 @@
 		<MastodonIcon />
 	</a> -->
 	<a
-		href="https://github.com/yazeed-eldigair"
-		target="_blank"
-		rel="noopener noreferrer"
-		title="See my GitHub profile"
-	>
-		<GitHubIcon />
-	</a>
-	<a
 		href="https://linkedin.com/in/yazeedeld"
 		target="_blank"
 		rel="noopener noreferrer"
 		title="Connect on LinkedIn"
 	>
 		<LinkedInIcon />
+	</a>
+	<a
+		href="https://github.com/yazeed-eldigair"
+		target="_blank"
+		rel="noopener noreferrer"
+		title="See my GitHub profile"
+	>
+		<GitHubIcon />
 	</a>
 	<a
 		href="mailto:yazeed.eldigair@gmail.com"
