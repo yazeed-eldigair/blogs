@@ -9,12 +9,10 @@
 	};
 
 	let { posts } = data;
-
-	posts = [];
 </script>
 
 <div class="container">
-	<ContentSection title="All Blog Posts">
+	<ContentSection title="All blog posts">
 		<div class="grid">
 			{#if posts.length}
 				{#each posts as post}
@@ -36,6 +34,10 @@
 
 <style lang="scss">
 	@import '$lib/scss/_mixins.scss';
+
+	.container {
+		min-height: 60vh;
+	}
 
 	.grid {
 		width: 100%;

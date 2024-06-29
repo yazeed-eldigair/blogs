@@ -20,7 +20,7 @@
 
 <svelte:element
 	this={tag}
-	class="card tilt {additionalClass}"
+	class="card {additionalClass}"
 	{...linkProps}
 	data-sveltekit-preload-data
 	{...$$restProps}

@@ -14,7 +14,7 @@
 	export let tags: TagType[] | undefined;
 </script>
 
-<Card additionalClass="project-card">
+<Card additionalClass="project-card tilt">
 	<div class="image" slot="image">
 		<Image src={image} alt="Picture describing the '{name}'' project" />
 	</div>

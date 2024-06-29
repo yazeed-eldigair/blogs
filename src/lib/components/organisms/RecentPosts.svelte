@@ -6,14 +6,12 @@
 	import RobotWriting from '$lib/components/molecules/RobotWriting.svelte';
 
 	export let posts: BlogPost[];
-
-	posts = [];
 </script>
 
-<ContentSection id="recent-posts" title="My recent blog posts" align="top">
-	<!-- <div slot="button">
-		<Button href="/blog">View More</Button>
-	</div> -->
+<ContentSection id="recent-posts" title="Recent blog posts" align="top">
+	<div slot="button">
+		<Button href="/blog">View more</Button>
+	</div>
 	{#if posts.length}
 		<div class="grid">
 			{#each posts as post}
